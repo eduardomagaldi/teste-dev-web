@@ -29,3 +29,59 @@ a:hover{color:#00aeef}
 .pricetag:after{content:'';width:0;height:0;position:absolute;right:100%;top:50%;border:33px solid transparent;border-right-color:#00aeef;margin-top:-33px;z-index:1}
 .descricao-cachorro .btn{font-family:'Amatic SC',cursive;color:#333;background-color:#fc0;font-size:45px;font-weight:700;padding:0;border-radius:0;margin:20px 0;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out}
 .descricao-cachorro .btn:hover{background-color:#e6b800;color:#fff;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out}
+
+@-webkit-keyframes NAME-YOUR-ANIMATION {
+    0% {
+      -webkit-transform: rotateY(0deg);
+    }
+    50% {
+      -webkit-transform: rotateY(180deg);
+    }
+    100% {
+      -webkit-transform: rotateY(0deg);
+    }
+}
+@-moz-keyframes NAME-YOUR-ANIMATION {
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      transform: rotateY(0deg);
+    }
+}
+@-o-keyframes NAME-YOUR-ANIMATION {
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      transform: rotateY(0deg);
+    }
+}
+@keyframes NAME-YOUR-ANIMATION {
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      transform: rotateY(0deg);
+    }
+}
+
+.spin {
+    -webkit-animation: NAME-YOUR-ANIMATION 1s infinite;
+    -moz-animation:    NAME-YOUR-ANIMATION 1s infinite;
+    -o-animation:      NAME-YOUR-ANIMATION 1s infinite;
+    animation:         NAME-YOUR-ANIMATION 1s infinite;
+    animation-timing-function: linear;
+    display: block;
+    margin: 50px auto;
+    width: 40px;
+}

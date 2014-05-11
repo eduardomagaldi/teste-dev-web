@@ -47,7 +47,7 @@ a:hover {
 .buscar input, .buscar button {
 	border-color: $azul;
 	height: 60px;
-	border-radius: 0;	
+	border-radius: 0;
 }
 
 .buscar input {
@@ -110,7 +110,7 @@ a:hover {
 	bottom: -70px;
 	left: 5%;
 	@include transition(bottom, 0.9s, ease-in-out);
-} 
+}
 
 .box-cachorro:hover div.btn-foto {
 	opacity: 1;
@@ -171,7 +171,7 @@ a:hover {
 	font-family: 'Amatic SC', cursive;
 	color: $preto;
 	font-size: 48px;
-	font-weight: 700;	
+	font-weight: 700;
 	margin-top: 0;
 }
 
@@ -227,4 +227,15 @@ a:hover {
 	background-color: darken($amarelo, 5);
 	color: #ffffff;
 	@include transition(all, 0.5s, ease-in-out);
+}
+
+.spin {
+    transition:all 2s ease-in-out;
+    perspective: 800px;
+    perspective-origin: 50% 100px;
+    display: none;
+    animation: 2s linear 0s normal none infinite spin
+}
+.spin:hover {
+    transform:rotateX(180deg);
 }
